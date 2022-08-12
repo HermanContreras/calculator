@@ -1,0 +1,81 @@
+body,
+.display,
+.clearDiv,
+.mainKeys,
+.mainKeys > div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+body {
+    height: 100vh;
+}
+
+body,
+.calcBody,
+.mainKeys {
+    flex-direction: column;
+}
+
+.calculator,
+.screen {
+    box-shadow: 0 2px 4px darkslategray;
+}
+
+.calculator {
+    background-color: #8c8c8c;
+    height: 400px;
+    width: 300px;
+    
+    padding: 1rem;
+    border-radius: 1rem;
+}
+
+.display {
+    height: 25%;
+}
+
+.screen {
+    background-color: #bfbfbf;
+    height: 80%;
+    width: 100%;
+    margin: 12px 12px 0px 12px;
+    padding: .650rem;
+    border-radius: .725rem;
+}
+
+.calcBody {
+    height: 75%;
+}
+
+.btn,
+.clear,
+.equals {
+    color: white;
+    border: none;
+    padding: 5px;
+    font-size: 31px;
+    box-shadow: 0 2px 4px darkslategray;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    margin: 4px;
+}
+
+.btn {
+    border-radius: 70%;
+    width: 18%;
+    height: 18%;
+}
+
+.clear {
+    margin-top: 24px;
+}
+
+.mainKeys > div {
+    width: 100%;
+}
+
+.mainKeys {
+    margin-top: 8px;
+}
