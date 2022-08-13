@@ -6,13 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculator</title>
     <link rel="stylesheet" href="./styles.css">
+    <link href='https://fonts.googleapis.com/css?family=Orbitron' rel='stylesheet' type='text/css'>
     <script src="scripts.js" defer></script>
 </head>
 <body>
     <div class="calculator">
         <div class="display">
             <div class="screen">
-
+                <div class="topDisplay"></div>
+                <div class="bottomDisplay"></div>
             </div>
         </div>
         <div class="calcBody">
@@ -21,29 +23,29 @@
             </div>
             <div class="mainKeys">
                 <div class="rowOne">
-                    <button class="btn">1</button>
-                    <button class="btn">2</button>
-                    <button class="btn">3</button>
-                    <button class="btn">&#xf7;</button> 
+                    <button class="btn" id="1">1</button>
+                    <button class="btn" id="2">2</button>
+                    <button class="btn" id="3">3</button>
+                    <button class="btn" id="/">&#xf7;</button> 
                 </div>
                 <div class="rowTwo">
-                    <button class="btn">4</button>
-                    <button class="btn">5</button>
-                    <button class="btn">6</button>
-                    <button class="btn">&#xd7;</button>
+                    <button class="btn" id="4">4</button>
+                    <button class="btn" id="5">5</button>
+                    <button class="btn" id="6">6</button>
+                    <button class="btn" id="*">&#xd7;</button>
                     
                 </div>
                 <div class="rowThree">
-                    <button class="btn">7</button>
-                    <button class="btn">8</button>
-                    <button class="btn">9</button>
-                    <button class="btn">-</button>
+                    <button class="btn" id="7">7</button>
+                    <button class="btn" id="8">8</button>
+                    <button class="btn" id="9">9</button>
+                    <button class="btn" id="-">-</button>
                 </div>
                 <div class="rowFour">
-                    <button class="btn">0</button>
-                    <button class="btn">.</button>
-                    <button class="btn">=</button>
-                    <button class="btn">+</button>
+                    <button class="btn" id="0">0</button>
+                    <button class="btn" id="decimal">.</button>
+                    <button class="btn" id="equals">=</button>
+                    <button class="btn" id="+">+</button>
                 </div>
             </div>
         </div>

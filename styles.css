@@ -8,11 +8,20 @@ body,
     justify-content: center;
 }
 
+.screen,
+.topDisplay,
+.bottomDisplay {
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+
 body {
     height: 100vh;
 }
 
 body,
+.screen,
 .calcBody,
 .mainKeys {
     flex-direction: column;
@@ -37,7 +46,7 @@ body,
 }
 
 .screen {
-    background-color: #bfbfbf;
+    background-color: white;
     height: 80%;
     width: 100%;
     margin: 12px 12px 0px 12px;
@@ -49,9 +58,7 @@ body,
     height: 75%;
 }
 
-.btn,
-.clear,
-.equals {
+button {
     color: white;
     border: none;
     padding: 5px;
@@ -62,6 +69,12 @@ body,
     margin: 4px;
 }
 
+button:active {
+    background-color: white;
+    box-shadow: 0 0 2px darkslategray;
+    transform: translateY(2px);
+  }
+
 .btn {
     border-radius: 70%;
     width: 18%;
@@ -70,6 +83,8 @@ body,
 
 .clear {
     margin-top: 24px;
+    height: 18%;
+    width: 50%;
 }
 
 .mainKeys > div {
@@ -78,4 +93,28 @@ body,
 
 .mainKeys {
     margin-top: 8px;
+}
+
+.displayNum {
+    font-size: 32px;
+}
+
+.screen {
+    font-size: 24px;
+}
+
+.topDisplay,
+.bottomDisplay {
+    min-width: 1px;
+}
+
+.topDisplay{
+    height: 40%;
+    font-family: 'Orbitron', sans-serif;
+}
+
+.bottomDisplay {
+    font-size: 32px;
+    font-family: 'Orbitron', sans-serif;
+    height: 60%;
 }
